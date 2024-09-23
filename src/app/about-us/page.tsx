@@ -3,9 +3,9 @@ import React from 'react';
 
 const AboutUs = () => {
 	return (
-		<div className="px-10 m-10">
+		<div className="px-2 m-4 md:px-10 md:m-10">
 			<div className="hero bg-base-100 mt-20">
-				<div className="hero-content flex-row">
+				<div className="hero-content flex-col lg:flex-row">
 					<img
 						src={`${process.env.NEXT_PUBLIC_BASE_PATH}/about-us-hero.png`}
 						height={550}
@@ -26,7 +26,7 @@ const AboutUs = () => {
 				</div>
 			</div>
 			<div className="hero bg-accent mt-20">
-				<div className="hero-content flex-row-reverse">
+				<div className="hero-content flex-col lg:flex-row-reverse">
 					<img
 						src={`${process.env.NEXT_PUBLIC_BASE_PATH}/mission.png`}
 						height={550}
@@ -48,7 +48,7 @@ const AboutUs = () => {
 			</div>
 			<h1 className="my-8 text-3xl text-center">MEET OUR TEAM</h1>
 			<div className="flex flex-col justify-center items-center">
-				<div className="carousel lg:w-2/3 w-full mx-10">
+				<div className="carousel lg:w-2/3 w-full lg:mx-10">
 					<div
 						id="slide1"
 						className="carousel-item relative w-full"
@@ -59,7 +59,7 @@ const AboutUs = () => {
 							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-1.png`}
 							alt="image-1"
 							height={40}
-							width={400}
+							width={500}
 						/>
 						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 							<a
@@ -85,7 +85,7 @@ const AboutUs = () => {
 							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-2.png`}
 							alt="image-1"
 							height={40}
-							width={400}
+							width={500}
 						/>
 						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 							<a
@@ -107,8 +107,11 @@ const AboutUs = () => {
 						className="carousel-item relative w-full"
 					>
 						<img
-							src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
 							className="w-full"
+							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-3.png`}
+							alt="image-1"
+							height={40}
+							width={500}
 						/>
 						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 							<a
@@ -130,12 +133,93 @@ const AboutUs = () => {
 						className="carousel-item relative w-full"
 					>
 						<img
-							src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
 							className="w-full"
+							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-4.png`}
+							alt="image-1"
+							height={40}
+							width={500}
 						/>
 						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 							<a
 								href="#slide3"
+								className="btn btn-circle"
+							>
+								❮
+							</a>
+							<a
+								href="#slide5"
+								className="btn btn-circle"
+							>
+								❯
+							</a>
+						</div>
+					</div>
+					<div
+						id="slide5"
+						className="carousel-item relative w-full"
+					>
+						<img
+							className="w-full"
+							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-5.png`}
+							alt="image-1"
+							height={40}
+							width={500}
+						/>
+						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<a
+								href="#slide4"
+								className="btn btn-circle"
+							>
+								❮
+							</a>
+							<a
+								href="#slide6"
+								className="btn btn-circle"
+							>
+								❯
+							</a>
+						</div>
+					</div>
+					<div
+						id="slide6"
+						className="carousel-item relative w-full"
+					>
+						<img
+							className="w-full"
+							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-6.png`}
+							alt="image-1"
+							height={40}
+							width={500}
+						/>
+						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<a
+								href="#slide5"
+								className="btn btn-circle"
+							>
+								❮
+							</a>
+							<a
+								href="#slide7"
+								className="btn btn-circle"
+							>
+								❯
+							</a>
+						</div>
+					</div>
+					<div
+						id="slide7"
+						className="carousel-item relative w-full"
+					>
+						<img
+							className="w-full"
+							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-7.png`}
+							alt="image-1"
+							height={40}
+							width={500}
+						/>
+						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<a
+								href="#slide6"
 								className="btn btn-circle"
 							>
 								❮

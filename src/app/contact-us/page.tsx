@@ -2,8 +2,8 @@ import React from 'react';
 
 const ContactUs = () => {
 	return (
-		<div className="flex flex-col w-full md:items-center m-10">
-			<div className="flex flex-col">
+		<div className="flex flex-col w-full md:items-center md:m-10">
+			<div className="flex flex-col px-4">
 				<h1 className=" text-3xl font-bold my-4">Send Us a Message</h1>
 				<div className="flex flex-row">
 					<label className="form-control w-full max-w-lg">
