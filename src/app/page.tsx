@@ -9,7 +9,7 @@ export default function Home() {
 						className="fl-row fl-row-full-width fl-row-bg-photo fl-node-qi4ua1zv79fk fl-row-default-height fl-row-align-center"
 						decoding="async"
 						alt="woman-taking-care-of-patient"
-						src={'/hero-1.png'}
+						src={`${process.env.NEXT_PUBLIC_BASE_PATH}/hero-1.png`}
 						height={720}
 						width={797}
 						sizes="(max-width: 797px) 125vw, 797px"
@@ -42,7 +42,7 @@ export default function Home() {
 				<div className="card border-2 bg-accent w-96 shadow-xl">
 					<figure className="bg-white">
 						<img
-							src={'/flag.png'}
+							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/flag.png`}
 							style={{ minHeight: 200 }}
 							height={200}
 							width={300}
@@ -60,7 +60,7 @@ export default function Home() {
 				<div className="card border-2 bg-accent w-96 shadow-xl">
 					<figure className="bg-white">
 						<img
-							src={'/texas.png'}
+							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/texas.png`}
 							style={{ minHeight: 200 }}
 							width={200}
 							height={200}
@@ -78,7 +78,7 @@ export default function Home() {
 				<div className="card border-2 bg-accent w-96 shadow-xl">
 					<figure className="bg-white">
 						<img
-							src={'/certified.png'}
+							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/certified.png`}
 							style={{ minHeight: 200 }}
 							width={200}
 							height={200}
@@ -96,7 +96,7 @@ export default function Home() {
 				<div className="card border-2 bg-accent w-96 shadow-xl">
 					<figure className="bg-white">
 						<img
-							src={'/coverage.png'}
+							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/coverage.png`}
 							style={{ minHeight: 200 }}
 							width={300}
 							height={200}
@@ -115,7 +115,7 @@ export default function Home() {
 			<div className="hero bg-base-100 mt-20">
 				<div className="hero-content lg:flex-row  flex-col">
 					<img
-						src={'/trusted-1.png'}
+						src={`${process.env.NEXT_PUBLIC_BASE_PATH}/trusted-1.png`}
 						height={550}
 						width={550}
 						alt="hospice care "

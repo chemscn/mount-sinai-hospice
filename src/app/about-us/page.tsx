@@ -7,7 +7,7 @@ const AboutUs = () => {
 			<div className="hero bg-base-100 mt-20">
 				<div className="hero-content flex-row">
 					<img
-						src={'/about-us-hero.png'}
+						src={`${process.env.NEXT_PUBLIC_BASE_PATH}/about-us-hero.png`}
 						height={550}
 						width={550}
 						alt="hospice care "
@@ -28,7 +28,7 @@ const AboutUs = () => {
 			<div className="hero bg-accent mt-20">
 				<div className="hero-content flex-row-reverse">
 					<img
-						src={'/mission.png'}
+						src={`${process.env.NEXT_PUBLIC_BASE_PATH}/mission.png`}
 						height={550}
 						width={550}
 						alt="hospice care"
@@ -56,7 +56,7 @@ const AboutUs = () => {
 						<img
 							sizes="100vw"
 							className="w-full"
-							src={'/carousel-1.png'}
+							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-1.png`}
 							alt="image-1"
 							height={40}
 							width={400}
@@ -82,7 +82,7 @@ const AboutUs = () => {
 					>
 						<img
 							className="w-full"
-							src={'/carousel-2.png'}
+							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-2.png`}
 							alt="image-1"
 							height={40}
 							width={400}
