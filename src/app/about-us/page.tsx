@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const AboutUs = () => {
 	return (
 		<div className="px-10 m-10">
