@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import NavLink from './NavLink';
 
 interface INavLinkElement {
@@ -28,11 +27,11 @@ const Navbar = () => {
 	];
 	return (
 		<div className="navbar bg-base-100 justify-between sticky top-0 px-5 border-b-[1px] z-10 pb-4">
-			<Image
-				src={'public/logo.png'}
+			<img
+				src="/logo.png"
 				height={120}
 				width={120}
-				alt="mount-sinai-hospice-logo"
+				alt="mount-sinai"
 			/>
 			<div className="navbar-end lg:flex lg:navbar-start">
 				<div className="dropdown dropdown-end">

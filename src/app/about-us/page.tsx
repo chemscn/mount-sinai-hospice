@@ -1,12 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
 
 const AboutUs = () => {
 	return (
 		<div className="px-10 m-10">
 			<div className="hero bg-base-100 mt-20">
 				<div className="hero-content flex-row">
-					<Image
+					<img
 						src={'/about-us-hero.png'}
 						height={550}
 						width={550}
@@ -27,7 +26,7 @@ const AboutUs = () => {
 			</div>
 			<div className="hero bg-accent mt-20">
 				<div className="hero-content flex-row-reverse">
-					<Image
+					<img
 						src={'/mission.png'}
 						height={550}
 						width={550}
@@ -53,7 +52,7 @@ const AboutUs = () => {
 						id="slide1"
 						className="carousel-item relative w-full"
 					>
-						<Image
+						<img
 							sizes="100vw"
 							className="w-full"
 							src={'/carousel-1.png'}
@@ -80,7 +79,7 @@ const AboutUs = () => {
 						id="slide2"
 						className="carousel-item relative w-full"
 					>
-						<Image
+						<img
 							className="w-full"
 							src={'/carousel-2.png'}
 							alt="image-1"

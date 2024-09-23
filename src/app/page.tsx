@@ -1,5 +1,3 @@
-
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
@@ -7,7 +5,7 @@ export default function Home() {
 		<div>
 			<div className="hero bg-accent min-h-screen">
 				<div className="hero-content flex-col lg:flex-row-reverse">
-					<Image
+					<img
 						className="fl-row fl-row-full-width fl-row-bg-photo fl-node-qi4ua1zv79fk fl-row-default-height fl-row-align-center"
 						decoding="async"
 						alt="woman-taking-care-of-patient"
@@ -43,7 +41,7 @@ export default function Home() {
 			<div className="flex flex-row flex-wrap gap-4 justify-center my-2">
 				<div className="card border-2 bg-accent w-96 shadow-xl">
 					<figure className="bg-white">
-						<Image
+						<img
 							src={'/flag.png'}
 							style={{ minHeight: 200 }}
 							height={200}
@@ -61,7 +59,7 @@ export default function Home() {
 				</div>
 				<div className="card border-2 bg-accent w-96 shadow-xl">
 					<figure className="bg-white">
-						<Image
+						<img
 							src={'/texas.png'}
 							style={{ minHeight: 200 }}
 							width={200}
@@ -79,7 +77,7 @@ export default function Home() {
 				</div>
 				<div className="card border-2 bg-accent w-96 shadow-xl">
 					<figure className="bg-white">
-						<Image
+						<img
 							src={'/certified.png'}
 							style={{ minHeight: 200 }}
 							width={200}
@@ -97,7 +95,7 @@ export default function Home() {
 				</div>
 				<div className="card border-2 bg-accent w-96 shadow-xl">
 					<figure className="bg-white">
-						<Image
+						<img
 							src={'/coverage.png'}
 							style={{ minHeight: 200 }}
 							width={300}
@@ -116,7 +114,7 @@ export default function Home() {
 			</div>
 			<div className="hero bg-base-100 mt-20">
 				<div className="hero-content lg:flex-row  flex-col">
-					<Image
+					<img
 						src={'/trusted-1.png'}
 						height={550}
 						width={550}
@@ -158,4 +156,3 @@ export default function Home() {
 		</div>
 	);
 }
-
