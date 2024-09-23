@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    distDir: 'dist',
+    basePath: '/mount-sinai-hospice',
 	images: {
 		remotePatterns: [
             {
@@ -9,8 +9,8 @@ const nextConfig = {
                 hostname: '**',
                 port: '',
                 pathname: '**'
-            }
-        ]
+            },
+        ],
 	}
 };
 
