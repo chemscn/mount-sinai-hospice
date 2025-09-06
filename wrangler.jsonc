@@ -1,8 +1,12 @@
 {
-  "name": "mount-sinai-hospice",
   "main": ".open-next/worker.js",
-  "compatibility_date": "2025-04-01",
-  "site": {
-    "bucket": ".open-next/assets"
+  "name": "mount-sinai-hospice",
+  "compatibility_date": "2025-03-25",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
   }
 }
