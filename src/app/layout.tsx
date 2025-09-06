@@ -3,7 +3,6 @@ import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-('');
 export const metadata: Metadata = {
 	title: 'Mount Sinai Hospice',
 	description: 'Hospice Care Texas',

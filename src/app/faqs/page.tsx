@@ -1,5 +1,4 @@
 import React from 'react';
-('');
 const Faqs = () => {
 	return (
 		<div className="px-2 m-4 md:px-10 md:m-10">
