@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
+export const runtime = 'edge';
+
 const AboutUs = () => {
 	return (
 		<div className="px-2 m-4 md:px-10 md:m-10">

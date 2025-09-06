@@ -1,4 +1,6 @@
 import React from 'react';
+export const runtime = 'edge';
+
 
 const ContactUs = () => {
 	return (
