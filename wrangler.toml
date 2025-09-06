@@ -1,0 +1,6 @@
+name = "mount-sinai-hospice"
+main = ".open-next/worker.js"
+compatibility_date = "2025-04-01"
+
+[site]
+bucket = ".open-next/assets"
