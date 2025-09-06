@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
@@ -5,17 +6,13 @@ export default function Home() {
 		<div>
 			<div className="hero bg-accent min-h-screen">
 				<div className="hero-content flex-col lg:flex-row-reverse">
-					<img
-						className="fl-row fl-row-full-width fl-row-bg-photo fl-node-qi4ua1zv79fk fl-row-default-height fl-row-align-center"
-						decoding="async"
-						alt="woman-taking-care-of-patient"
-						src={`${process.env.NEXT_PUBLIC_BASE_PATH}/hero-1.png`}
-						height={720}
+					<Image
 						width={797}
-						sizes="(max-width: 797px) 125vw, 797px"
-						title="Mount Sinai Hospice"
+						height={720}
+						src="/hero-1.png"
+						alt="woman-taking-care-of-patient"
+						className="fl-row fl-row-full-width fl-row-bg-photo fl-node-qi4ua1zv79fk fl-row-default-height fl-row-align-center"
 					/>
-
 					<div>
 						<h1 className="text-5xl font-bold">
 							SPECIALIZED HOSPICE SUPPORT FOR A{' '}
@@ -41,12 +38,12 @@ export default function Home() {
 			<div className="flex flex-row flex-wrap gap-4 justify-center my-2">
 				<div className="card border-2 bg-accent w-96 shadow-xl">
 					<figure className="bg-white">
-						<img
-							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/flag.png`}
-							style={{ minHeight: 200 }}
-							height={200}
+						<Image
 							width={300}
+							height={200}
+							src="/flag.png"
 							alt="texas"
+							style={{ minHeight: 200, height: 200 }}
 						/>
 					</figure>
 					<div className="card-body">
@@ -59,12 +56,12 @@ export default function Home() {
 				</div>
 				<div className="card border-2 bg-accent w-96 shadow-xl">
 					<figure className="bg-white">
-						<img
-							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/texas.png`}
-							style={{ minHeight: 200 }}
+						<Image
 							width={200}
 							height={200}
 							alt="texas"
+							src="/texas.png"
+							style={{ height: 200, minHeight: 200 }}
 						/>
 					</figure>
 					<div className="card-body">
@@ -77,9 +74,9 @@ export default function Home() {
 				</div>
 				<div className="card border-2 bg-accent w-96 shadow-xl">
 					<figure className="bg-white">
-						<img
-							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/certified.png`}
-							style={{ minHeight: 200 }}
+						<Image
+							src="/certified.png"
+							style={{ height: 200, minHeight: 200 }}
 							width={200}
 							height={200}
 							alt="texas"
@@ -95,9 +92,9 @@ export default function Home() {
 				</div>
 				<div className="card border-2 bg-accent w-96 shadow-xl">
 					<figure className="bg-white">
-						<img
-							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/coverage.png`}
-							style={{ minHeight: 200 }}
+						<Image
+							src="/coverage.png"
+							style={{ height: 200, minHeight: 200 }}
 							width={300}
 							height={200}
 							alt="texas"
@@ -114,13 +111,12 @@ export default function Home() {
 			</div>
 			<div className="hero bg-base-100 mt-20">
 				<div className="hero-content lg:flex-row  flex-col">
-					<img
-						src={`${process.env.NEXT_PUBLIC_BASE_PATH}/trusted-1.png`}
+					<Image
 						height={550}
 						width={550}
 						alt="hospice care "
+						src="/trusted-1.png"
 					/>
-
 					<div>
 						<h1 className="text-3xl font-bold">
 							<span className="text-primary">TRUSTED</span> &{' '}

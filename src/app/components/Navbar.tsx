@@ -1,6 +1,7 @@
 import React from 'react';
 import NavLink from './NavLink';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface INavLinkElement {
 	path: string;
@@ -29,12 +30,7 @@ const Navbar = () => {
 	return (
 		<div className="navbar bg-base-100 justify-between sticky top-0 px-5 border-b-[1px] z-10 pb-4">
 			<Link href="/">
-				<img
-					src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo.png`}
-					height={120}
-					width={120}
-					alt="mount-sinai"
-				/>
+			<Image src="/logo.png" height={120} width={120} alt="mount-sinai-logo" />
 			</Link>
 			<div className="navbar-end lg:flex lg:navbar-start">
 				<div className="dropdown dropdown-end">

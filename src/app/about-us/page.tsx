@@ -1,18 +1,17 @@
 import React from 'react';
-
+import Image from 'next/image';
 
 const AboutUs = () => {
 	return (
 		<div className="px-2 m-4 md:px-10 md:m-10">
 			<div className="hero bg-base-100 mt-20">
 				<div className="hero-content flex-col lg:flex-row">
-					<img
-						src={`${process.env.NEXT_PUBLIC_BASE_PATH}/about-us-hero.png`}
+					<Image
 						height={550}
 						width={550}
-						alt="hospice care "
+						alt="hospice care"
+						src="/about-us-hero.png"
 					/>
-
 					<div>
 						<h1 className="text-3xl font-bold">
 							YOUR <span className="text-primary">TRUSTED</span> HOSPICE CARE PROVIDER
@@ -27,13 +26,12 @@ const AboutUs = () => {
 			</div>
 			<div className="hero bg-accent mt-20">
 				<div className="hero-content flex-col lg:flex-row-reverse">
-					<img
-						src={`${process.env.NEXT_PUBLIC_BASE_PATH}/mission.png`}
+					<Image
 						height={550}
 						width={550}
 						alt="hospice care"
+						src="/mission.png"
 					/>
-
 					<div>
 						<h1 className="text-3xl font-bold">
 							OUR <span className="text-primary">MISSION</span>
@@ -53,24 +51,23 @@ const AboutUs = () => {
 						id="slide1"
 						className="carousel-item relative w-full"
 					>
-						<img
-							sizes="100vw"
-							className="w-full"
-							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-1.png`}
+						<Image
 							alt="image-1"
 							height={40}
 							width={500}
+							src="/carousel-1.png"
+							className="w-full max-h-[800px] min-h-[800px]"
 						/>
 						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 							<a
 								href="#slide4"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❮
 							</a>
 							<a
 								href="#slide2"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❯
 							</a>
@@ -80,23 +77,23 @@ const AboutUs = () => {
 						id="slide2"
 						className="carousel-item relative w-full"
 					>
-						<img
-							className="w-full"
-							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-2.png`}
-							alt="image-1"
+						<Image
+							alt="image-2"
 							height={40}
 							width={500}
+							src="/carousel-2.png"
+							className="w-full max-h-[800px] min-h-[800px]"
 						/>
 						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 							<a
 								href="#slide1"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❮
 							</a>
 							<a
 								href="#slide3"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❯
 							</a>
@@ -106,23 +103,23 @@ const AboutUs = () => {
 						id="slide3"
 						className="carousel-item relative w-full"
 					>
-						<img
-							className="w-full"
-							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-3.png`}
-							alt="image-1"
+						<Image
+							alt="image-3"
 							height={40}
 							width={500}
+							src="/carousel-3.png"
+							className="w-full max-h-[800px] min-h-[800px]"
 						/>
 						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 							<a
 								href="#slide2"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❮
 							</a>
 							<a
 								href="#slide4"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❯
 							</a>
@@ -132,23 +129,23 @@ const AboutUs = () => {
 						id="slide4"
 						className="carousel-item relative w-full"
 					>
-						<img
-							className="w-full"
-							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-4.png`}
-							alt="image-1"
+						<Image
+							alt="image-4"
 							height={40}
 							width={500}
+							src="/carousel-4.png"
+							className="w-full max-h-[800px] min-h-[800px]"
 						/>
 						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 							<a
 								href="#slide3"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❮
 							</a>
 							<a
 								href="#slide5"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❯
 							</a>
@@ -158,23 +155,23 @@ const AboutUs = () => {
 						id="slide5"
 						className="carousel-item relative w-full"
 					>
-						<img
-							className="w-full"
-							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-5.png`}
-							alt="image-1"
+						<Image
+							alt="image-5"
 							height={40}
 							width={500}
+							src="/carousel-5.png"
+							className="w-full max-h-[800px] min-h-[800px]"
 						/>
 						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 							<a
 								href="#slide4"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❮
 							</a>
 							<a
 								href="#slide6"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❯
 							</a>
@@ -184,23 +181,23 @@ const AboutUs = () => {
 						id="slide6"
 						className="carousel-item relative w-full"
 					>
-						<img
-							className="w-full"
-							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-6.png`}
-							alt="image-1"
+						<Image
+							alt="image-6"
 							height={40}
 							width={500}
+							src="/carousel-6.png"
+							className="w-full max-h-[800px] min-h-[800px]"
 						/>
 						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 							<a
 								href="#slide5"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❮
 							</a>
 							<a
 								href="#slide7"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❯
 							</a>
@@ -210,23 +207,23 @@ const AboutUs = () => {
 						id="slide7"
 						className="carousel-item relative w-full"
 					>
-						<img
-							className="w-full"
-							src={`${process.env.NEXT_PUBLIC_BASE_PATH}/carousel-7.png`}
-							alt="image-1"
+						<Image
+							alt="image-7"
 							height={40}
 							width={500}
+							src="/carousel-7.png"
+							className="w-full max-h-[800px] min-h-[800px]"
 						/>
 						<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 							<a
 								href="#slide6"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❮
 							</a>
 							<a
 								href="#slide1"
-								className="btn btn-circle"
+								className="btn btn-circle btn-primary"
 							>
 								❯
 							</a>
