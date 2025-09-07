@@ -17,10 +17,79 @@ export async function POST(req: Request) {
 			to: 'drkarm123@gmail.com',
 			subject: 'Mount Sinai Hospice - Request',
 			html: `
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form Submission</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .email-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .header {
+      background-color: #604882;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h4 {
+      color: #003366;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 5px 0;
+    }
+    .footer {
+      background-color: #604882;
+      color: #ffffff;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1>New Contact Form Submission</h1>
+    </div>
+    <div class="content">
       <h4>Name: ${name}</h4>
-      <p>Phone Number: ${phoneNumber}</p>
-      <p>Email: ${email}</p>
-      <p>Message: ${message}</p>
+      <p><strong>Phone Number:</strong> ${phoneNumber}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Message:</strong></p>
+      <p>${message}</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 Mount Sinai Hospice | All Rights Reserved</p>
+    </div>
+  </div>
+</body>
+</html>
       `,
 		});
 
