@@ -14,7 +14,7 @@ export async function POST(req: Request) {
 	try {
 		await resend.emails.send({
 			from: sender,
-			to: 'drkarm123@gmail.com',
+			to: 'mahdi@mountsinaihospice.net',
 			subject: 'Mount Sinai Hospice - Request',
 			html: `
    <!DOCTYPE html>
