@@ -82,7 +82,7 @@ export async function POST(req: Request) {
       <p><strong>Phone Number:</strong> ${phoneNumber}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Message:</strong></p>
-      <p>${message}</p>
+      <p>${message} - let us test</p>
     </div>
     <div class="footer">
       <p>&copy; 2025 Mount Sinai Hospice | All Rights Reserved</p>
