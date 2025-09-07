@@ -2,14 +2,14 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
+	const resend = new Resend(process.env.RESEND_API_KEY);
 	const { name, phoneNumber, email, message } = await req.json();
 
-      const isDev = process.env.NODE_ENV === "development";
+	const isDev = process.env.NODE_ENV === 'development';
 
-      const sender = isDev ? "onboarding@resend.dev" : email;
+	const sender = isDev ? 'onboarding@resend.dev' : email;
 
 	try {
 		await resend.emails.send({
