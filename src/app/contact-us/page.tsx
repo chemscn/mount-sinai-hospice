@@ -53,7 +53,6 @@ const ContactUs = () => {
 						type="text"
 						className="flex input input-bordered input-primary flex-row"
 						required
-						minLength={5}
 					/>
 				</label>
 				<label className="form-control w-full">
@@ -67,7 +66,6 @@ const ContactUs = () => {
 						type="tel"
 						className="flex input input-bordered input-primary flex-row"
 						required
-						pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
 					/>
 				</label>
 				<label className="form-control w-full">
@@ -81,7 +79,6 @@ const ContactUs = () => {
 						type="email"
 						className="flex input input-bordered input-primary flex-row"
 						required
-						pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 					/>
 				</label>
 				<textarea
