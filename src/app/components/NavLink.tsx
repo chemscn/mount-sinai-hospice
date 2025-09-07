@@ -22,7 +22,7 @@ const NavLink = ({ path, name}: INavlinkProps) =>  {
 	}
 
 	return (
-		<li className='text-lg'>
+		<li className='text-lg mx-1'>
 			<Link
 				onClick={handleClick}
 				className={`hover:bg-primary hover:text-white`}

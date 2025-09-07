@@ -13,7 +13,7 @@ const config: Config = {
 				pastel: {
 					primary: '#604882',
 					accent: '#f5eeff',
-					'--rounded-btn': '2rem',
+					'--rounded-btn': '.5rem',
 					'--rounded-box': '0rem'
 				},
 			},
