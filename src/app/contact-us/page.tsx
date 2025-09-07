@@ -40,8 +40,8 @@ const ContactUs = () => {
 		<SuccessfulEmailSent />
 	) : (
 		<form onSubmit={handleSubmit}>
-			<h1 className="mx-10 lg:mx-20 text-3xl font-bold my-4">Send Us a Message</h1>
-			<div className="flex flex-col mx-10 lg:mx-20 items-center">
+			<h1 className="mx-10 lg:mx-60 text-3xl font-bold my-4">Send Us a Message</h1>
+			<div className="flex flex-col mx-10 lg:mx-60 items-center">
 				<label className="form-control w-full">
 					<div className="label">
 						<span className="label-text">Name</span>
