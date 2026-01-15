@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import NavLink from './NavLink';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -9,6 +10,7 @@ interface INavLinkElement {
 }
 
 const Navbar = () => {
+	const [isOpen, setIsOpen] = useState<boolean>();
 	const navLinks: INavLinkElement[] = [
 		{
 			path: '/',
@@ -37,6 +39,7 @@ const Navbar = () => {
 					<div
 						tabIndex={0}
 						role="button"
+						onClick={()=>setIsOpen((v)=> !v)}
 						className="btn btn-ghost lg:hidden"
 					>
 						<svg
@@ -58,12 +61,13 @@ const Navbar = () => {
 						tabIndex={0}
 						className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
 					>
-						{navLinks.map((link, i) => {
+						{isOpen && navLinks.map((link, i) => {
 							return (
 								<NavLink
 									key={i}
 									path={link.path}
 									name={link.name}
+									closeMenu={()=>setIsOpen(false)}
 								/>
 							);
 						})}

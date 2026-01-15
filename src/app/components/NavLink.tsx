@@ -6,13 +6,15 @@ import React from 'react';
 interface INavlinkProps {
     path: string;
     name: string;
+	closeMenu?: () => void;
 }
 
-const NavLink = ({ path, name}: INavlinkProps) =>  {
+const NavLink = ({ path, name, closeMenu}: INavlinkProps) =>  {
 	const router = useRouter();
 	const pathName = usePathname();
 	const handleClick = (e:any)=>{
 		e.preventDefault();
+		closeMenu?.();
 		router.push(path);
 	}
 
