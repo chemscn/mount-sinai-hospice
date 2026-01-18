@@ -6,15 +6,18 @@ import React from 'react';
 interface INavlinkProps {
     path: string;
     name: string;
-	closeMenu?: () => void;
 }
 
-const NavLink = ({ path, name, closeMenu}: INavlinkProps) =>  {
+ const closeDropdown = () => {
+    // daisyUI dropdown stays open because focus remains,
+    // so we remove focus to close it
+    (document.activeElement as HTMLElement | null)?.blur();
+  };
+
+const NavLink = ({ path, name}: INavlinkProps) =>  {
 	const router = useRouter();
 	const pathName = usePathname();
 	const handleClick = (e:any)=>{
-		e.preventDefault();
-		closeMenu?.();
 		router.push(path);
 	}
 
@@ -24,7 +27,7 @@ const NavLink = ({ path, name, closeMenu}: INavlinkProps) =>  {
 	}
 
 	return (
-		<li className='text-lg mx-1'>
+		<li onClick={closeDropdown} className='text-lg mx-1'>
 			<Link
 				onClick={handleClick}
 				className={`hover:bg-primary hover:text-white`}

@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import NavLink from "./NavLink";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,8 +8,8 @@ interface INavLinkElement {
   name: string;
 }
 
+
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState<boolean>();
 
   const navLinks: INavLinkElement[] = [
     { path: "/", name: "Home" },
@@ -18,6 +17,7 @@ const Navbar = () => {
     { path: "/faqs", name: "What to Expect" },
     { path: "/contact-us", name: "Contact Us" },
   ];
+
 
 
   return (
@@ -31,9 +31,6 @@ const Navbar = () => {
         <div className="dropdown dropdown-end">
           <button
             type="button"
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-            aria-expanded={isOpen}
-            onClick={()=>setIsOpen((v)=> !v)}
             className="btn btn-ghost lg:hidden"
           >
             <svg
@@ -57,12 +54,11 @@ const Navbar = () => {
               className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               role="menu"
             >
-              {isOpen && navLinks.map((link) => (
+              { navLinks.map((link) => (
                 <NavLink
                   key={link.path}
                   path={link.path}
                   name={link.name}
-                  closeMenu={()=> setIsOpen(false)}
                 />
               ))}
             </ul>
