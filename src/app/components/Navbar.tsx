@@ -11,7 +11,7 @@ interface INavLinkElement {
 
 const Navbar = () => {
   // ✅ start closed, not undefined
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>();
 
   const navLinks: INavLinkElement[] = [
     { path: "/", name: "Home" },
