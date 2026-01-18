@@ -17,7 +17,7 @@ interface INavlinkProps {
 const NavLink = ({ path, name}: INavlinkProps) =>  {
 	const router = useRouter();
 	const pathName = usePathname();
-	const handleClick = (e:any)=>{
+	const handleClick = ()=>{
 		router.push(path);
 	}
 
