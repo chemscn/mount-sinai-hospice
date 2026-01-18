@@ -2,6 +2,9 @@
   "main": ".open-next/worker.js",
   "name": "mount-sinai-hospice",
   "compatibility_date": "2025-03-25",
+  "vars": {
+    "NODE_VERSION": "20.19.4"
+  },
   "compatibility_flags": [
     "nodejs_compat"
   ],
