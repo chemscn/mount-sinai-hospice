@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html data-theme="pastel" lang="en">
+    <html data-theme="pastel" lang="en" suppressHydrationWarning>
       <body className="flex flex-col min-h-screen">
         <SchemaLocalBusiness />
         <Navbar />

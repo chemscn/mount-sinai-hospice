@@ -78,7 +78,7 @@ const Navbar = () => {
       <nav className="navbar-end hidden lg:flex" aria-label="Primary navigation">
         <ul className="menu menu-horizontal px-1">
           {navLinks.map((link) => (
-            <NavLink key={link.path} path={link.path} name={link.name} />
+            <NavLink key={link.path} path={link.path} name={link.name} closeMenu={()=> closeMenu()}  />
           ))}
         </ul>
       </nav>
