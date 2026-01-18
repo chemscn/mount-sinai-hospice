@@ -10,7 +10,7 @@ interface INavLinkElement {
 }
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>();
 
   const navLinks: INavLinkElement[] = [
     { path: "/", name: "Home" },
@@ -33,7 +33,7 @@ const Navbar = () => {
             type="button"
             aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
-            onClick={()=>setIsOpen((v)=> v === false ? true: false)}
+            onClick={()=>setIsOpen((v)=> !v)}
             className="btn btn-ghost lg:hidden"
           >
             <svg
@@ -53,12 +53,11 @@ const Navbar = () => {
             </svg>
           </button>
         <nav>
-          {isOpen && (
             <ul
               className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               role="menu"
             >
-              {navLinks.map((link) => (
+              {isOpen && navLinks.map((link) => (
                 <NavLink
                   key={link.path}
                   path={link.path}
@@ -67,7 +66,6 @@ const Navbar = () => {
                 />
               ))}
             </ul>
-          )}
         </nav>
         </div>
       </div>

@@ -67,13 +67,13 @@ const AboutUs = () => {
 								href="#slide4"
 								className="btn btn-circle btn-primary"
 							>
-								❮
+								&lt;
 							</a>
 							<a
 								href="#slide2"
 								className="btn btn-circle btn-primary"
 							>
-								❯
+								&gt;
 							</a>
 						</div>
 					</div>
@@ -93,13 +93,13 @@ const AboutUs = () => {
 								href="#slide1"
 								className="btn btn-circle btn-primary"
 							>
-								❮
+								&lt;
 							</a>
 							<a
 								href="#slide3"
 								className="btn btn-circle btn-primary"
 							>
-								❯
+								&gt;
 							</a>
 						</div>
 					</div>
@@ -119,13 +119,13 @@ const AboutUs = () => {
 								href="#slide2"
 								className="btn btn-circle btn-primary"
 							>
-								❮
+								&lt;
 							</a>
 							<a
 								href="#slide4"
 								className="btn btn-circle btn-primary"
 							>
-								❯
+								&gt;
 							</a>
 						</div>
 					</div>
@@ -145,13 +145,13 @@ const AboutUs = () => {
 								href="#slide3"
 								className="btn btn-circle btn-primary"
 							>
-								❮
+								&lt;
 							</a>
 							<a
 								href="#slide5"
 								className="btn btn-circle btn-primary"
 							>
-								❯
+								&gt;
 							</a>
 						</div>
 					</div>
@@ -171,13 +171,13 @@ const AboutUs = () => {
 								href="#slide4"
 								className="btn btn-circle btn-primary"
 							>
-								❮
+								&lt;
 							</a>
 							<a
 								href="#slide6"
 								className="btn btn-circle btn-primary"
 							>
-								❯
+								&gt;
 							</a>
 						</div>
 					</div>
@@ -197,13 +197,13 @@ const AboutUs = () => {
 								href="#slide5"
 								className="btn btn-circle btn-primary"
 							>
-								❮
+								&lt;
 							</a>
 							<a
 								href="#slide7"
 								className="btn btn-circle btn-primary"
 							>
-								❯
+								&gt;
 							</a>
 						</div>
 					</div>
@@ -223,13 +223,13 @@ const AboutUs = () => {
 								href="#slide6"
 								className="btn btn-circle btn-primary"
 							>
-								❮
+								&lt;
 							</a>
 							<a
 								href="#slide1"
 								className="btn btn-circle btn-primary"
 							>
-								❯
+								&gt;
 							</a>
 						</div>
 					</div>
