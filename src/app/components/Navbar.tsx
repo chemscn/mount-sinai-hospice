@@ -20,12 +20,10 @@ const Navbar = () => {
     { path: "/contact-us", name: "Contact Us" },
   ];
 
-  const toggleMenu = () => setIsOpen((v) => !v);
-  const closeMenu = () => setIsOpen(false);
 
   return (
     <header className="navbar bg-base-100 justify-between sticky top-0 px-5 border-b-[1px] z-10 pb-4">
-      <Link href="/" aria-label="Go to homepage" onClick={closeMenu}>
+      <Link href="/" aria-label="Go to homepage">
         <Image src="/logo.png" height={120} width={120} alt="Mount Sinai Hospice logo" priority />
       </Link>
 
@@ -36,7 +34,7 @@ const Navbar = () => {
             type="button"
             aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
-            onClick={toggleMenu}
+            onClick={()=>setIsOpen((v)=> !v)}
             className="btn btn-ghost lg:hidden"
           >
             <svg
@@ -66,7 +64,7 @@ const Navbar = () => {
                   key={link.path}
                   path={link.path}
                   name={link.name}
-                  closeMenu={closeMenu}
+                  closeMenu={()=> setIsOpen(false)}
                 />
               ))}
             </ul>
@@ -78,7 +76,7 @@ const Navbar = () => {
       <nav className="navbar-end hidden lg:flex" aria-label="Primary navigation">
         <ul className="menu menu-horizontal px-1">
           {navLinks.map((link) => (
-            <NavLink key={link.path} path={link.path} name={link.name} closeMenu={()=> closeMenu()}  />
+            <NavLink key={link.path} path={link.path} name={link.name} />
           ))}
         </ul>
       </nav>
