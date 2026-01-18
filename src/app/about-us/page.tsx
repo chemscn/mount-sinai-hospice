@@ -1,5 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+	title: 'About Mount Sinai Hospice | Medicare-Certified Hospice in Texas',
+	description: 'Learn about Mount Sinai Hospice and our mission to provide compassionate, patient-centered hospice care in Texas. Serving Harlingen, Victoria, and nearby counties.',
+};
 const AboutUs = () => {
 	return (
 		<div className="px-2 m-4 md:px-10 md:m-10">

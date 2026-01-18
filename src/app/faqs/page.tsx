@@ -1,8 +1,14 @@
 import React from 'react';
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+	title: 'Hospice FAQ | Eligibility, Coverage & Services in Texas',
+	description: 'Answers to common hospice questions: eligibility, referrals, services, and Medicare coverage. Get clear guidance from Mount Sinai Hospice in Texas.',
+};
+
 const Faqs = () => {
 	return (
 		<div className="px-2 m-4 md:px-10 md:m-10">
-			<h1 className="text-2xl font-bold my-5">Frequently Asked Questions</h1>
+			<h1 className="text-2xl font-bold my-5">What to Expect | Frequently Asked Questions</h1>
 			<div className="collapse rounded-sm collapse-arrow bg-primary text-white my-2">
 				<input
 					type="radio"
