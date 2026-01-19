@@ -26,7 +26,7 @@ const Navbar = () => {
 
 
       {/* Mobile */}
-        <details className="dropdown dropdown-end">
+        <details className="dropdown dropdown-end lg:hidden">
           <summary className="dropdown">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
