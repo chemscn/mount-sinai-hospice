@@ -13,7 +13,6 @@ const NavLink = ({ path, name}: INavlinkProps) =>  {
 	const pathName = usePathname();
 	const handleClick = (e:any)=>{
 		e.preventDefault();
-		(document.activeElement as HTMLElement | null)?.blur();
 		router.push(path);
 	}
 
