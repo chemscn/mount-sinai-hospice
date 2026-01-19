@@ -21,7 +21,7 @@ const Navbar = () => {
 
 
   return (
-    <header className="navbar bg-base-100 justify-between sticky top-0 px-5 border-b-[1px] z-10 pb-4">
+    <header className="navbar pt-1 bg-base-100 justify-between sticky top-0 px-5 border-b-[1px] z-10 pb-2">
       <Link href="/" aria-label="Go to homepage">
         <Image src="/logo.png" height={120} width={120} alt="Mount Sinai Hospice logo" priority />
       </Link>
@@ -49,12 +49,11 @@ const Navbar = () => {
               />
             </svg>
           </button>
-        <nav>
             <ul
               className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               role="menu"
             >
-              { navLinks.map((link) => (
+              {navLinks.map((link) => (
                 <NavLink
                   key={link.path}
                   path={link.path}
@@ -62,7 +61,6 @@ const Navbar = () => {
                 />
               ))}
             </ul>
-        </nav>
         </div>
       </div>
 

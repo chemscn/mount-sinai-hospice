@@ -48,7 +48,7 @@ export default function ContactForm() {
     <SuccessfulEmailSent />
   ) : (
     <form onSubmit={handleSubmit}>
-      <h1 className="mx-10 lg:mx-60 text-3xl font-bold my-4">Send Us a Message</h1>
+      <h1 className="mx-10 lg:mx-60 text-3xl font-bold my-8">Send Us a Message</h1>
       <div className="flex flex-col mx-10 lg:mx-60 items-center">
         <label className="form-control w-full">
           <div className="label">
